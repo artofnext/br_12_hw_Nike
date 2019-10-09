@@ -1,0 +1,23 @@
+{
+  "name": "br_12_hw_nike",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/artofnext/br_12_hw_Nike.git"
+  },
+  "keywords": [
+    "gulp",
+    "scss"
+  ],
+  "author": "artofnext",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/artofnext/br_12_hw_Nike/issues"
+  },
+  "homepage": "https://github.com/artofnext/br_12_hw_Nike#readme"
+}
