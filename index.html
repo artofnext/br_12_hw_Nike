@@ -8,24 +8,61 @@
     <meta name="author" content="Oleksandr Novytskyi">
 	<meta name="description" content="Beetroot Lesson 12 homework - Nike">
 	<link rel="stylesheet" href="css/styles.css">
-	<link rel="icon" href="img//favicon.png">
+    <link rel="icon" href="img//favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <main>
-        <article class="card">
-                <div class="nav__logo"><a href="#"><img src="img/logo.png" alt="logo"></a></div>
-
-            <div class="card__picture">
-                <div>
-                    <img src="img/img_nike.png" alt="nike">
-                    <img class="card__bg" src="img/bg_card.png" alt="texture">
+        <article class="product">
+            <div class="left-container">
+                <div class="product__logo"><a href="#"><img src="img/logo.png" alt="logo"></a></div>
+                <div class="product__picture">
+                    <img src="img/Nike-SB-Stefan-Janoski-Max.png" alt="nike">
+                </div>
+                <div class="dots">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
                 </div>
             </div>
-            <div class="picture__thumbnail">
-
-            </div>
-            <div class="card__info">
-
+            <div class="right-container">
+                <div class="product__name">
+                    <h1 class="product__name">Nike SB Stefan<br>Janoski Max</h1>
+                </div>
+                <div class="product__description">
+                    Unisex Skateboarding Shoe (Men's Sizing)
+                </div>
+                <div class="product__star-rate">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <div class="product__selectors">
+                    <select class="product__size opasity-box">
+                        <option value="" hidden>Size</option>
+                        <option value="40">40</option>
+                        <option value="41">41</option>
+                        <option value="42">42</option>
+                        <option value="43">43</option>
+                        <option value="44">44</option>
+                        <option value="45">45</option>
+                        <option value="46">46</option>
+                    </select>
+                    <select class="product__quantity opasity-box">
+                        <option value="" hidden>Qty</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="all">all</option>
+                    </select>
+                </div>
+                <div class="product__add">
+                    <button class="product__btn opasity-box">Add to chart</button>
+                </div>
             </div>
         </article>
     </main>
