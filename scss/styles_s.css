@@ -1,0 +1,118 @@
+@font-face {
+  font-family: 'Museo';
+  src: url("../fonts/Museo Sans W01 Rounded 1000.woff2") format("woff2"), url("../fonts/Museo Sans W01 Rounded 1000.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+body {
+  font-family: Museo, Arial, Helvetica, sans-serif;
+  background-image: url(../img/main_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #c5c5c8;
+  color: #e1e1e1;
+  letter-spacing: 0.1em;
+  height: 97vh;
+  box-sizing: border-box; }
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
+  box-sizing: border-box;
+  overflow: hidden; }
+
+.product {
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 750px;
+  width: 90%;
+  background-color: #111a28;
+  border-radius: 20px;
+  box-shadow: 0 0 50px black; }
+
+.product__logo {
+  margin: 25px; }
+
+.left-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.right-container {
+  max-width: 190px;
+  margin: 0 40px;
+  align-self: center; }
+
+.right-container div {
+  margin: 25px 0; }
+
+.product__logo {
+  align-self: flex-start; }
+
+.product__picture {
+  margin: 70px 30px 0 30px; }
+
+.dots {
+  margin: 50px 0 25px 0;
+  display: flex;
+  justify-content: center; }
+
+.dots div {
+  width: 10px;
+  height: 10px;
+  background-color: #1f273f;
+  border: 2px solid #111a28;
+  border-radius: 50%;
+  margin: 0 5px; }
+
+.dots div:first-child {
+  border: 2px solid #c5c5c8; }
+
+.dots div:nth-child(2) {
+  background-color: white; }
+
+.dots div:nth-child(3) {
+  background-color: red; }
+
+.dots div:nth-child(4) {
+  background-color: lightskyblue; }
+
+.product__name {
+  font-size: 24px; }
+
+.product__description {
+  font-size: 14px;
+  color: #9da1a6; }
+
+.opasity-box {
+  background-color: #ffffff00;
+  height: 30px;
+  color: #e1e1e1;
+  font-family: Museo, Arial, Helvetica, sans-serif;
+  padding: 0 7px; }
+
+option {
+  background: #1f273f;
+  text-align: center;
+  color: #e1e1e1; }
+
+.product__btn {
+  height: 40px;
+  display: block;
+  width: 100%;
+  border: 1px solid #9da1a6; }
+
+.opasity-box:hover {
+  background-color: #ffffff22; }
+
+.fa-star {
+  color: #9da1a6; }
+
+.checked {
+  color: orange; }
+
+@media only screen and (max-width: 680px) {
+  .product {
+    flex-direction: column; } }
