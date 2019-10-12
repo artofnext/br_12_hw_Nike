@@ -84,16 +84,29 @@ main {
     border: 2px solid #c5c5c8;
 }
 
-.dots div:nth-child(2) {
+.dots div:nth-child(2), #white {
     background-color: white;
 }
 
-.dots div:nth-child(3) {
+.dots div:nth-child(3), #red {
     background-color: red;
 }
 
-.dots div:nth-child(4) {
+.dots div:nth-child(4), #blue {
     background-color: lightskyblue;
+}
+
+.dots div:hover {
+    border: 2px solid #c5c5c8;
+}
+
+.radio {
+    width: 10px;
+    height: 10px;
+    background-color: #1f273f;
+    border: 2px solid #111a28;
+    border-radius: 50%;
+    margin: 0 5px;
 }
 
 .product__name {
