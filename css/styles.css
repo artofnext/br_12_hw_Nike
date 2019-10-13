@@ -71,42 +71,42 @@ main {
     justify-content: center;
 }
 
-.dots div {
+.dot {
     width: 10px;
     height: 10px;
-    background-color: #1f273f;
     border: 2px solid #111a28;
     border-radius: 50%;
     margin: 0 5px;
+    position: relative;
 }
 
-.dots div:first-child {
-    border: 2px solid #c5c5c8;
+#grey {
+    background-color: #1f273f;
 }
 
-.dots div:nth-child(2), #white {
+#white {
     background-color: white;
 }
 
-.dots div:nth-child(3), #red {
+#red {
     background-color: red;
 }
 
-.dots div:nth-child(4), #blue {
+#blue {
     background-color: lightskyblue;
 }
 
-.dots div:hover {
+input:checked + .dot  {
     border: 2px solid #c5c5c8;
 }
 
+.dot:hover {
+    border: 2px solid white;
+}
+
 .radio {
-    width: 10px;
-    height: 10px;
-    background-color: #1f273f;
-    border: 2px solid #111a28;
-    border-radius: 50%;
-    margin: 0 5px;
+    position: absolute;
+    visibility: hidden;
 }
 
 .product__name {
