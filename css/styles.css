@@ -145,25 +145,28 @@ option {
 
 .fa-star {
     color: #9da1a6;
+    padding: 0 2px;
    
 }
 
-.fa-star:hover {
+.star-input:checked ~ label span {
+    color: orange;
+}
+
+.star-input:hover ~ label span {
+    color: yellow;
     text-shadow:
-   /* -1px -1px 0 white,  
+   /* -1px -1px 0 white,  this makes stroke to letter
     1px -1px 0 white,
     -1px 1px 0 white,
-     1px 1px 0 white; */
+     1px 1px 0 white, */
 
-     0 0 3px white;
+     0 0 2px yellow, /* to make effect more stronger */
+     0 0 2px white;
 }
 
-.fa-star:hover {
-    color: orange;
-}
-
-.fa-star:hover ~ span {
-    color: orange;
+.star-input {
+    display: none;
 }
 
 .product__star-rate {
