@@ -145,10 +145,31 @@ option {
 
 .fa-star {
     color: #9da1a6;
+   
 }
 
-.checked {
+.fa-star:hover {
+    text-shadow:
+   /* -1px -1px 0 white,  
+    1px -1px 0 white,
+    -1px 1px 0 white,
+     1px 1px 0 white; */
+
+     0 0 3px white;
+}
+
+.fa-star:hover {
     color: orange;
+}
+
+.fa-star:hover ~ span {
+    color: orange;
+}
+
+.product__star-rate {
+    display: flex;
+    flex-flow: row-reverse;
+    justify-content: flex-end;
 }
 
 @media only screen and (max-width: 680px) {
