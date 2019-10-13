@@ -65,35 +65,50 @@ main {
     margin: 70px 30px 0 30px;
 }
 
+/* Color dots checkbox */
+
 .dots {
     margin: 50px 0 25px 0;
     display: flex;
     justify-content: center;
 }
 
-.dots div {
+.dot {
     width: 10px;
     height: 10px;
-    background-color: #1f273f;
     border: 2px solid #111a28;
     border-radius: 50%;
     margin: 0 5px;
+    position: relative;
 }
 
-.dots div:first-child {
-    border: 2px solid #c5c5c8;
+#grey {
+    background-color: #1f273f;
 }
 
-.dots div:nth-child(2) {
+#white {
     background-color: white;
 }
 
-.dots div:nth-child(3) {
+#red {
     background-color: red;
 }
 
-.dots div:nth-child(4) {
+#blue {
     background-color: lightskyblue;
+}
+
+input:checked + .dot  {
+    border: 2px solid #c5c5c8;
+}
+
+.dot:hover {
+    border: 2px solid white;
+}
+
+.radio {
+    position: absolute;
+    visibility: hidden;
 }
 
 .product__name {
@@ -130,13 +145,81 @@ option {
     background-color: #ffffff22;
 }
 
+/* Star rating */
+
 .fa-star {
     color: #9da1a6;
+    padding: 0 2px;
+   
 }
 
-.checked {
+.star-input:checked ~ label span {
     color: orange;
 }
+
+.star-input:hover ~ label span {
+    color: yellow;
+    text-shadow:
+   /* -1px -1px 0 white,  this makes stroke to letter
+    1px -1px 0 white,
+    -1px 1px 0 white,
+     1px 1px 0 white, */
+
+     0 0 2px yellow, /* to make effect more stronger */
+     0 0 2px white;
+}
+
+.star-input {
+    display: none;
+}
+
+.product__star-rate {
+    display: flex;
+    flex-flow: row-reverse; /* need to reverse star order */
+    justify-content: flex-end;
+}
+
+/* Tooltips */
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    /* border-bottom: 1px dotted black; */
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    opacity: 0;
+    width: 80px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 180%;
+    left: 50%;
+    margin-left: -40px;
+    font-size: .8em;
+    transition: opacity 0.3s;
+  }
+  
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #555 transparent;
+  }
+
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: .9;
+  }
 
 @media only screen and (max-width: 680px) {
 
