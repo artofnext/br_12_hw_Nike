@@ -65,6 +65,8 @@ main {
     margin: 70px 30px 0 30px;
 }
 
+/* Color dots checkbox */
+
 .dots {
     margin: 50px 0 25px 0;
     display: flex;
@@ -143,6 +145,8 @@ option {
     background-color: #ffffff22;
 }
 
+/* Star rating */
+
 .fa-star {
     color: #9da1a6;
     padding: 0 2px;
@@ -171,7 +175,7 @@ option {
 
 .product__star-rate {
     display: flex;
-    flex-flow: row-reverse;
+    flex-flow: row-reverse; /* need to reverse star order */
     justify-content: flex-end;
 }
 
